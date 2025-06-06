@@ -156,7 +156,7 @@ Postgres-Database-Project-BrazilianMortality/
 3. pip (Python package installer)
 4. Required Python libraries:  
 ```bash
-pip install psycopg2-binary pandas jupyterlab ipykernel>=6
+pip install duckdb pandas jupyterlab ipykernel>=6
 ```
     *(Note: `ipykernel` needed for Jupyter)*
 5.  **Clone Repository:** Clone this repository to your local machine.
