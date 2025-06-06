@@ -87,7 +87,7 @@ The following raw datasets were used and are available in the `datasets/` folder
 - `CID-10-CATEGORIAS.csv`: ICD-10 categories descriptions.
 
 ### Preprocessed Data  
-After cleaning and transforming raw inputs, the following files in `preprocessed_datasets/` were loaded into the database (each corresponds to one table in the logical model):
+After cleaning and transforming raw inputs, the following files in `preprocessed_datasets_NoSQL/` were loaded into the database (each corresponds to one table in the logical model):
 
 - `Death.csv`: Stores date, time, location, death cause, deceased's personal data and other informations about the death.
 - `Location.csv`: Stores information about Brazilian states, cities, their GDP, their GDP per capita and their basic health units
@@ -116,7 +116,7 @@ Postgres-Database-Project-BrazilianMortality/
 │   ├── Unidades_Basicas_Saude-UBS.csv
 │   └── CID-10-CATEGORIAS.csv
 │
-├── preprocessed_datasets/  # Cleaned CSV files ready for DB import
+├── preprocessed_datasets_NoSQL/  # Cleaned CSV files ready for DB import
 │   ├── Death.csv
 │   └── Municipality.csv
 │
@@ -192,12 +192,12 @@ Open the [`python/tables.ipynb`](./python/tables.ipynb). Locate the database con
 3.  **Execute Cells:** Run the cells in the notebook sequentially.
     *   The notebook will first connect to the database.
     *   It will then execute the script to populate de database.
-    *   Next, it will read data from the CSV files in the `/preprocessed_datasets` directory and load it into the corresponding database tables. Progress messages will be printed.
+    *   Next, it will read data from the CSV files in the `/preprocessed_datasets_NoSQL` directory and load it into the corresponding database tables. Progress messages will be printed.
     *   Finally, it will execute the 5 predefined analytical queries and display their results within the notebook (using pandas DataFrames).
 
 ## Data Preprocessing
 
-The [`preprocessing.ipynb`](./preprocessing.ipynb) notebook details the steps taken to transform the original input files into the simplified format used for database loading. This involved selecting relevant columns, renaming columns, handling missing values (where appropriate), and potentially filtering data. Running this notebook is optional if the files in `/preprocessed_datasets` are already present and deemed correct.
+The [`preprocessing.ipynb`](./preprocessing.ipynb) notebook details the steps taken to transform the original input files into the simplified format used for database loading. This involved selecting relevant columns, renaming columns, handling missing values (where appropriate), and potentially filtering data. Running this notebook is optional if the files in `/preprocessed_datasets_NoSQL` are already present and deemed correct.
 ## Analysis and Queries
 Data analysis was done through queries, which can be executed with the [`queries.ipynb`](./queries.ipynb) notebook. The queries used were:
 
