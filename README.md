@@ -101,7 +101,7 @@ After cleaning and transforming raw inputs, the following files in `preprocessed
   - duckdb: DuckDB adapter for Python  
   - pandas: Data manipulation and analysis (used in preprocessing and query result display)  
   - jupyterlab/notebook: For running the `.ipynb` files  
-- **Tools**: pgAdmin 4 (for database management and ERD generation)
+- **Tools**: database.db (database management and data storage)
 
 ---
 
@@ -169,7 +169,7 @@ pip install psycopg2-binary pandas jupyterlab ipykernel>=6
 ### Database Setup
 
 1. Establish Connection:
-Open the [`python/tables.ipynb`](./python/tables.ipynb). Locate the database connection parameters near the beginning of the script.
+Open the [`python/tables.ipynb`](./python/tables.ipynb). Locate the database connection parameters near the beginning of the script. This will establish the connection to the file that stores the data `database.db`
 
     ```python
     # --- Database Connection Parameters ---
