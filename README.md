@@ -164,7 +164,7 @@ pip install psycopg2-binary pandas jupyterlab ipykernel>=6
     git clone <repository-url>
     cd DuckDB-Database-Project-BrazilianMortality
     ```
-6.  **CSV Files:** Ensure the CSV files are present in the `/preprocessed_datasets` directory.
+6.  **CSV Files:** Ensure the CSV files are present in the `/preprocessed_datasets_NoSQL` directory.
 
 ### Database Setup
 
